@@ -38,7 +38,7 @@ document.querySelector('#search').addEventListener('keydown', async (event) => {
 
 // Function to fetch weather data
 async function fetchWeatherData(city) {
-    const apiKey = import.meta.env.VITE_API_KEY || '3dcc8d4c19d0e773ff0a55403be09d8c';
+    const apiKey = import.meta.env.VITE_API_KEY;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;
 
     try {
