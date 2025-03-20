@@ -1,0 +1,391 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Space Grotesk";
+  font-weight: normal;
+  font-weight: 300;
+  overflow: hidden;
+  /* Previne qualquer rolagem no body e html */
+}
+
+.ball {
+  position: fixed;
+  width: 1200px;
+  height: 800px;
+  right: 18%;
+  bottom: -44%;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -1;
+  /* Mantém a bola atrás de tudo */
+  opacity: 0.8;
+  transition: 2s;
+  background-color: rgba(0, 107, 230, 0.5);
+  /* Cor padrão inicial */
+}
+
+/* Landing Page Styles */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.centered-input {
+  text-align: center;
+}
+
+.centered-input h1 {
+  font-size: 48pt;
+  margin-bottom: 40px;
+}
+
+.centered-input .input-wrapper input {
+  padding: 20px;
+  border-radius: 15px;
+  border: solid rgba(121, 121, 121, 0.774) 0.6px;
+  width: 380px;
+  font-family: "Space Grotesk";
+  text-align: center;
+  font-size: 16pt;
+}
+
+/* Grid Container Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* Previne rolagem dentro do container principal */
+}
+
+/*Aplicando Margins*/
+.grid-1,
+.grid-2 {
+  margin-top: 40px;
+}
+
+.grid-1,
+.grid-3 {
+  margin-left: 90px;
+}
+
+.grid-3,
+.grid-4 {
+  margin-bottom: 40px;
+}
+
+.grid-2,
+.grid-4 {
+  margin-right: 80px;
+}
+
+/*GRID-1*/
+
+.grid-1 .max-min-wrap {
+  display: flex;
+  gap: 100px;
+  margin-top: -150px;
+  margin-left: 14px;
+  font-size: 26pt;
+}
+
+.grid-1 .max-min-wrap ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.grid-1 h1 {
+  font-size: 160pt;
+  letter-spacing: -3px;
+  margin-top: 0;
+  white-space: nowrap;
+
+}
+
+/*GRID-2*/
+.grid-2 .input-wrapper {
+  margin-top: 60px;
+  margin-right: 20px;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.grid-2 input {
+  padding: 20px;
+  border-radius: 15px;
+  border: solid rgba(121, 121, 121, 0.774) 0.6px;
+  width: 380px;
+  font-family: "Space Grotesk";
+  text-align: center;
+  font-size: 16pt;
+}
+
+/*GRID-3*/
+.grid-3 {
+  align-items: center;
+  display: flex;
+}
+
+.grid-3 .square-wrapper {
+  display: flex;
+  gap: 70px;
+  height: 360px;
+}
+
+.grid-3 .square-wrapper div {
+  border: solid 1px rgb(0, 0, 0);
+  width: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.grid-3 .square-wrapper div img {
+  width: 90px;
+  height: 90px;
+  align-self: center;
+  margin-top: 40px;
+}
+
+/*Clouds card visual fix*/
+.grid-3 .square-wrapper .clouds-fix .nuvem {
+  width: 90px;
+  height: 90px;
+  align-self: center;
+  margin-top: 35px;
+}
+
+.grid-3 .square-wrapper div p {
+  text-align: center;
+  font-size: 18pt;
+  font-weight: 400;
+  margin: 0;
+}
+
+.grid-3 .square-wrapper div h3 {
+  text-align: center;
+  font-size: 26pt;
+  margin: 0;
+  letter-spacing: -1.5px;
+}
+
+/*Images*/
+.grid-3 .square-wrapper .gota {
+  width: 80px;
+  height: 80px;
+}
+
+.grid-3 .square-wrapper .nuvem {
+  width: 100px;
+  height: 100px;
+}
+
+.grid-3 .square-wrapper .vento {
+  width: 80px;
+  height: 80px;
+}
+
+/*GRID-4*/
+.grid-4 {
+  overflow: hidden;
+  /* Previne rolagem neste grid */
+}
+
+.grid-4 .degree-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: clamp(60pt, 12vw, 170pt);
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Previne rolagem neste wrapper */
+}
+
+sup {
+  font-size: 180pt;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 1380px) {
+  .centered-input h1 {
+    font-size: 36pt;
+  }
+
+  .centered-input .input-wrapper input {
+    width: 300px;
+  }
+
+  .grid-1 h1 {
+    font-size: 100pt;
+  }
+
+  .grid-1 .max-min-wrap {
+    gap: 50px;
+    margin-top: -100px;
+    font-size: 20pt;
+  }
+
+  .grid-2 input {
+    width: 300px;
+    font-size: 14pt;
+  }
+
+  .grid-3 .square-wrapper {
+    gap: 30px;
+  }
+
+  .grid-3 .square-wrapper div {
+    width: 120px;
+  }
+
+  .grid-4 .degree-wrapper {
+    font-size: 120pt;
+  }
+
+  sup {
+    font-size: 120pt;
+  }
+
+  .grid-1,
+  .grid-3 {
+    margin-left: 40px;
+  }
+
+  .grid-2,
+  .grid-4 {
+    margin-right: 40px;
+  }
+}
+
+/* Celulares */
+@media screen and (max-width: 1000px) {
+  .centered-input h1 {
+    font-size: 28pt;
+  }
+
+  .centered-input .input-wrapper input {
+    width: 280px;
+    padding: 15px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    height: 100vh;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    margin: 20px;
+    height: auto;
+    overflow: hidden;
+    /* Garante que não haja rolagem em cada grid */
+  }
+
+  .grid-1 h1 {
+    font-size: 60pt;
+    /* Reduzido para caber sem rolagem */
+    text-align: center;
+  }
+
+  .grid-1 .max-min-wrap {
+    justify-content: center;
+    margin-top: -60px;
+    margin-left: 0;
+    gap: 40px;
+    font-size: 16pt;
+  }
+
+  .grid-2 .input-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .grid-2 {
+    margin-top: 0px;
+  }
+
+  .grid-2 input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    /* Reduzido o padding */
+  }
+
+  .grid-3 {
+    display: flex;
+    justify-content: center;
+    order: 4;
+    margin-bottom: 50px;
+  }
+
+  .grid-3 .square-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    gap: 15px;
+    padding: 0px;
+  }
+
+  .grid-3 .square-wrapper div {
+    width: 50%;
+    /* Define largura como porcentagem para melhor adaptação */
+    padding: 20px 10px;
+    gap: 30px;
+  }
+
+  .grid-3 .square-wrapper div img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .grid-3 .square-wrapper .clouds-fix .nuvem {
+    margin-top: 10px;
+  }
+
+  .grid-3 .square-wrapper div h3 {
+    font-size: 16pt;
+  }
+
+  .grid-3 .square-wrapper div p {
+    font-size: 14pt;
+  }
+
+  .grid-4 {
+    margin-bottom: 0px;
+    order: 3;
+    padding: 0;
+
+  }
+
+  .grid-4 .degree-wrapper {
+    font-size: 60pt;
+    justify-content: center;
+  }
+
+  sup {
+    font-size: 60pt;
+  }
+}

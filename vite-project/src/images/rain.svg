@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 95.5 68">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .17;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="-165.5" y="-1505" width="1926" height="1080"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="756" cy="-478.89" fx="756" fy="-478.89" r="996.5" gradientTransform="translate(0 2.91) scale(1 .79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb100"/>
+      <stop offset="1" stop-color="#ffb100" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g class="cls-4">
+      <ellipse class="cls-3" cx="756" cy="-376.5" rx="996.5" ry="789.5"/>
+    </g>
+  </g>
+  <g>
+    <rect x="2.42" y="2.31" width="82" height="1.5" rx=".75" ry=".75"/>
+    <rect x="24.42" y="17.81" width="68.5" height="1.5" rx=".75" ry=".75"/>
+    <rect x="2.42" y="33.31" width="77" height="1.5" rx=".75" ry=".75"/>
+    <rect x="15.42" y="49.06" width="77.5" height="1.5" rx=".75" ry=".75" transform="translate(-.32 .35) rotate(-.37)"/>
+    <rect x="2.42" y="64.31" width="79" height="1.5" rx=".75" ry=".75"/>
+  </g>
+</svg>

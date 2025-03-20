@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" async>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+
+  <div class="ball"></div>
+
+  <div class="landing-page" id="landing-page">
+    <div class="centered-input">
+      <h1>Weather App</h1>
+      <form>
+        <div class="input-wrapper">
+          <input id="landing-search" type="text" placeholder="Enter city name">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="grid-container" id="weather-display" style="display: none;">
+    <div class="grid-1">
+      <h1 id="city_name">Search -></h1>
+      <div class="max-min-wrap">
+        <ul>
+          <li>Highest -</li>
+          <li id="highest"></li>
+          <li>Lowest -</li>
+          <li id="low"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-2">
+      <form>
+        <div class="input-wrapper">
+          <input id="search" type="text" placeholder="Search">
+        </div>
+      </form>
+    </div>
+    <div class="grid-3">
+      <div class="square-wrapper">
+        <div>
+          <img class="gota" src="src/images/air.svg">
+          <p id="air">%</p>
+          <h3>Air</h3>
+        </div>
+        <div class="clouds-fix">
+          <img class="nuvem" src="src/images/clouds.svg">
+          <p id="cloud">%</p>
+          <h3>Clouds</h3>
+        </div>
+        <div>
+          <img class="vento" src="src/images/rain.svg">
+          <p id="wind">km/h</p>
+          <h3>Wind</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-4">
+      <div class="degree-wrapper">
+        <h1 id="temp">0</h1>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>

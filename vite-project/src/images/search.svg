@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .17;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="-369" y="-1604" width="1926" height="1080"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="552.5" cy="-577.89" fx="552.5" fy="-577.89" r="996.5" gradientTransform="translate(0 -17.66) scale(1 .79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb100"/>
+      <stop offset="1" stop-color="#ffb100" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g class="cls-4">
+      <ellipse class="cls-3" cx="552.5" cy="-475.5" rx="996.5" ry="789.5"/>
+    </g>
+  </g>
+  <path d="M16.58,1.11c-3.76.58-6.82,3.59-7.45,7.35-.45,2.68.31,5.21,1.81,7.11L.56,25.08c-.41.38-.44,1.01-.06,1.42h0c.38.41,1.01.44,1.42.06l10.43-9.56c1.87,1.52,4.38,2.3,7.06,1.89,3.77-.58,6.83-3.59,7.46-7.34C27.9,5.43,22.69.17,16.58,1.11ZM18,17c-3.86,0-7-3.14-7-7s3.14-7,7-7,7,3.14,7,7-3.14,7-7,7Z"/>
+</svg>
