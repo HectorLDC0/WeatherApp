@@ -5,19 +5,19 @@ document.querySelector('#landing-search').addEventListener('keydown', async (eve
     if (event.key === 'Enter' || event.keyCode === 13) {
         event.preventDefault();
         const searchValue = document.querySelector('#landing-search').value.trim();
-        
+
         if (searchValue) {
             const success = await fetchWeatherData(searchValue);
             if (success) {
                 // Update the main search input with the same value
                 document.querySelector('#search').value = searchValue;
-                
+
                 // Switch from landing page to weather display
                 document.getElementById('landing-page').style.display = 'none';
                 document.getElementById('weather-display').style.display = 'grid';
             }
         } else {
-            alert('Digite uma cidade');
+            alert('type a city');
         }
     }
 });
@@ -27,11 +27,11 @@ document.querySelector('#search').addEventListener('keydown', async (event) => {
     if (event.key === 'Enter' || event.keyCode === 13) {
         event.preventDefault();
         const searchValue = document.querySelector('#search').value.trim();
-        
+
         if (searchValue) {
             await fetchWeatherData(searchValue);
         } else {
-            alert('Digite uma cidade');
+            alert('type a city');
         }
     }
 });
@@ -43,20 +43,20 @@ async function fetchWeatherData(city) {
 
     try {
         const response = await fetch(apiUrl);
-        
-        // Log para debug
-        console.log("Status da resposta:", response.status);
-        
+
+        // Log for debug
+        console.log("Status:", response.status);
+
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        
+
         const json = await response.json();
-        
-        // Log para debug
-        console.log("Dados recebidos:", json);
-        
-        // Verificação mais simples
+
+        // Log for debug
+        console.log("Dada received:", json);
+
+        // data 
         if (json.main && json.name) {
             showInfo({
                 city: json.name,
@@ -70,17 +70,16 @@ async function fetchWeatherData(city) {
             updateBallColor(json.main.temp);
             return true;
         } else {
-            alert('Dados da cidade inválidos ou incompletos.');
+            alert('invalid or incomplete data.');
             return false;
         }
     } catch (error) {
-        console.error("Erro ao buscar os dados:", error);
-        
-        // Mensagem de erro mais específica
+        console.error("Error:", error);
+
         if (error.message.includes('404')) {
-            alert('Cidade não encontrada! Verifique o nome e tente novamente.');
+            alert('City not found! Verify and try again.');
         } else {
-            alert(`Erro ao conectar com a API: ${error.message}`);
+            alert(`Error to connect with API: ${error.message}`);
         }
         return false;
     }
@@ -96,6 +95,7 @@ function showInfo(json) {
     document.querySelector("#cloud").innerHTML = `${json.clouds} %`;
 }
 
+//background color changer funcion
 function updateBallColor(temperature) {
     const ball = document.querySelector(".ball");
     if (temperature > 32) {

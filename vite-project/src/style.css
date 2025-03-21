@@ -8,7 +8,6 @@ html {
   font-weight: normal;
   font-weight: 300;
   overflow: hidden;
-  /* Previne qualquer rolagem no body e html */
 }
 
 .ball {
@@ -20,11 +19,10 @@ html {
   border-radius: 50%;
   filter: blur(150px);
   z-index: -1;
-  /* Mantém a bola atrás de tudo */
+
   opacity: 0.8;
   transition: 2s;
   background-color: rgba(0, 107, 230, 0.5);
-  /* Cor padrão inicial */
 }
 
 /* Landing Page Styles */
@@ -63,10 +61,9 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  /* Previne rolagem dentro do container principal */
 }
 
-/*Aplicando Margins*/
+/*Margins*/
 .grid-1,
 .grid-2 {
   margin-top: 40px;
@@ -202,7 +199,6 @@ html {
 /*GRID-4*/
 .grid-4 {
   overflow: hidden;
-  /* Previne rolagem neste grid */
 }
 
 .grid-4 .degree-wrapper {
@@ -214,7 +210,6 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /* Previne rolagem neste wrapper */
 }
 
 sup {
@@ -222,7 +217,7 @@ sup {
   font-weight: 700;
 }
 
-
+/*media queries*/
 @media screen and (max-width: 1380px) {
   .centered-input h1 {
     font-size: 36pt;
@@ -274,7 +269,7 @@ sup {
   }
 }
 
-/* Celulares */
+/* Cell */
 @media screen and (max-width: 1000px) {
   .centered-input h1 {
     font-size: 28pt;
@@ -298,12 +293,10 @@ sup {
     margin: 20px;
     height: auto;
     overflow: hidden;
-    /* Garante que não haja rolagem em cada grid */
   }
 
   .grid-1 h1 {
     font-size: 60pt;
-    /* Reduzido para caber sem rolagem */
     text-align: center;
   }
 
@@ -329,7 +322,6 @@ sup {
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
-    /* Reduzido o padding */
   }
 
   .grid-3 {
@@ -350,7 +342,6 @@ sup {
 
   .grid-3 .square-wrapper div {
     width: 50%;
-    /* Define largura como porcentagem para melhor adaptação */
     padding: 20px 10px;
     gap: 30px;
   }
